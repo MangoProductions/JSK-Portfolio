@@ -1,48 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+h2,
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    font-size: 1.2em;
-    background: url('background.jpg'); no-repeat center center fixed;
-    background-size: cover;
+    background-color: #8c8c8c;
+    margin: 20px 1%;
+    font-family: serif, "Bellefair", sans-serif;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+header {
+    padding: 50px;
+    overflow: hidden;
+
+}
+
+header > #logo {
+    padding: 50px;
+    float: left;
+
+}
+
+nav {
+    float: right;
+
+}
+
+#imagos {
+    
+  margin-left: 10%;
+
+}
+
+
+
+
+
+
+main {
+    padding: 50px;
+    overflow: hidden;
+}
+
+section {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: #9F1D35;
+    border-right: 2px solid whitesmoke;
+}
+
+article {
+    padding: 30px 0px;
+    border-bottom: 2px solid whitesmoke;
+
+}
+
+article:last-child {
+    border-bottom: 0px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background-color: #9F1D35;
+    padding: 20px;
+    border-left: 2px solid whitesmoke;
+}
+
+aside h3 {
+    background-color: #800020;
+    
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px 0px 20px 0px;
+
+
+}
+
+aside a {
+    color: black;
+}
+
+footer {
+    padding: 20px;
+    border-top: 2px solid #421;
+    text-align: center;
+}
+
+
+img{
+    
+    max-width: 100%;
+    height: auto;
+    padding: 20px; 
     
 }
 
-#container {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    background: #555D50;
-    opacity: 0.9;
+/* Buttonin näkymä */
+.collapsible {
+    background-color: firebrick;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+    
 }
 
-.panel {
-    max-width: 80%;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 10px;
-    background: #3D0C02; 
+/* Tausta */
+.active,
+.collapsible:hover {
+    background-color: darkred;
 }
 
-button {
-    background: #414A4C;
-    height: 3em;
-    width: 80%;
-    margin-bottom: 1.5em;
-    border-radius: 10px;
-    color: antiquewhite;
-    font-size: 0.8em;
+/* Perus */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    
+    background-color: #934;
 }
-
-
-input {
-    border-radius: 10px;
-    width: 80%;
-    height: 4em;
-    text-align: center;
-    background: #9F2F2F;
-}
-
-.activeButton{
-    background: green;
-}
-
